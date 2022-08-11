@@ -49,3 +49,12 @@ main {
 #input-lastname {
   width: 100%;
 }
+
+#email-house {
+  display: flex;
+  flex-direction: row;
+}
+
+#input-email, #house {
+  width: 100%;
+}
