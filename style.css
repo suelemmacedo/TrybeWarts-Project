@@ -12,7 +12,6 @@
   display: flex;
   align-self: center;
   width: auto;
-   
 }
 
 #trybewarts-header-title {
@@ -39,4 +38,14 @@ main {
   height: 500px;
   display: flex;
   justify-content: flex-end;
+}
+
+#fullname {
+  display: flex;
+  flex-direction: row;
+}
+
+#input-name,
+#input-lastname {
+  width: 100%;
 }
