@@ -58,3 +58,8 @@ main {
 #input-email, #house {
   width: 100%;
 }
+
+#radio-form {
+  /* display: flex;
+  flex-direction: column; */
+}
