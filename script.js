@@ -16,7 +16,6 @@ userValidation();
 const btnSubmit = document.querySelector("#submit-btn");
 const concordo = document.querySelector("#agreement");
 
-
 concordo.addEventListener('click', enableSubmit);
 function enableSubmit() {
   if (concordo.checked === true) {
