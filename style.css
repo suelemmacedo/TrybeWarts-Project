@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -45,8 +46,7 @@ main {
   flex-direction: row;
 }
 
-#input-name,
-#input-lastname {
+#input-name , #input-lastname {
   width: 100%;
 }
 
@@ -55,7 +55,7 @@ main {
   flex-direction: row;
 }
 
-#input-email, #house {
+#input-email , #house {
   width: 100%;
 }
 
@@ -63,7 +63,7 @@ footer {
   display: flex;
   border: 1px solid black;
   justify-content: center;
-  background-color: rgb(13,17,23);
+  background-color: rgb(13, 17, 23);
   color: white;
   align-content: flex-end;
   position: absolute;
@@ -72,5 +72,3 @@ footer {
   left: 0%;
 
 }
-
-  
