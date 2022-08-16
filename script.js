@@ -24,3 +24,16 @@ function enableSubmit() {
   }
 }
 concordo.addEventListener('click', enableSubmit);
+
+const text = document.querySelector('#textarea');
+
+text.addEventListener('keyup', function(e) { 
+  const inputLength = text.value.length; 
+  const limiteChars = 500;
+
+  let maxChars = document.getElementById('textarea').setAttribute('maxChars', limiteChars);
+  const pValor = document.getElementById('counter');
+
+  let charsDigitados = parseInt(inputLength);
+  pValor.innerHTML = ( - charsDigitados + limiteChars);
+});
