@@ -88,39 +88,3 @@ function setMaterias() {
 btnSubmit.addEventListener('click', submitClick);
 btnSubmit.addEventListener('click', changeFormData);
 btnSubmit.addEventListener('click', setMaterias);
-
-/* const nome = document.getElementById("input-name");
-const sobrenome = document.getElementById("input-lastname");
-
-let estudantes = [];
-
-const addEstudante = (ev) => {
-  ev.preventDefault();
-  const estudante = {
-    Nome: `${nome.value} ${sobrenome.value}`,
-    Email: document.getElementById("input-email").value,
-    Casa: document.getElementById("house").value,
-    Família: document.getElementById("label-family").value,
-    Matérias: document.getElementsByClassName("subject").value,
-    Avaliação: document.getElementById("label-rate").value,
-    Observações: document.getElementById("textarea").value,
-  };
-  let estudantes = [];
-  estudantes.push(estudante);
-  document.forms[0].reset();
-  console.log(estudantes);
-};
-
-document.addEventListener("DOMContentLoaded", (e) => {
-  e.preventDefault();
-  document.getElementById("submit-btn").addEventListener("click", addEstudante);
-}); */
-
-//const form = document.querySelectorAll("main")[0];
-//form.addEventListener("click", function (e) {
-//  e.preventDefault();
-//  const newForm = document.createElement("div");
-//  newForm.id = "form-data";
-//  newForm.innerHTML = estudantes;
-//  form.parentNode.replaceChild(newForm, form);
-//});
