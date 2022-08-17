@@ -1,20 +1,20 @@
 function userValidation() {
-  const email = document.getElementById("email");
-  const senha = document.getElementById("senha");
+  const email = document.getElementById('email');
+  const senha = document.getElementById('senha');
 
-  if (email.value === "tryber@teste.com" && senha.value === "123456") {
-    alert("Olá, Tryber!");
+  if (email.value === 'tryber@teste.com' && senha.value === '123456') {
+    alert('Olá, Tryber!');
   } else {
-    alert("Email ou senha inválidos.");
+    alert('Email ou senha inválidos.');
   }
-  const button = document.getElementById("btn");
-  button.addEventListener("click", userValidation);
+  const button = document.getElementById('btn');
+  button.addEventListener('click', userValidation);
 }
 
 userValidation();
 
-const btnSubmit = document.querySelector("#submit-btn");
-const concordo = document.querySelector("#agreement");
+const btnSubmit = document.querySelector('#submit-btn');
+const concordo = document.querySelector('#agreement');
 
 function enableSubmit() {
   if (concordo.checked === true) {
@@ -23,33 +23,27 @@ function enableSubmit() {
     btnSubmit.disabled = true;
   }
 }
-concordo.addEventListener("click", enableSubmit);
+concordo.addEventListener('click', enableSubmit);
 
-const text = document.querySelector("#textarea");
+const text = document.querySelector('#textarea');
 
-text.addEventListener("keyup", function (e) {
+text.addEventListener('keyup', () => {
   const inputLength = text.value.length;
   const limiteChars = 500;
-
-  let maxChars = document
-    .getElementById("textarea")
-    .setAttribute("maxChars", limiteChars);
-  const pValor = document.getElementById("counter");
-
-  let charsDigitados = parseInt(inputLength);
-  pValor.innerHTML = -charsDigitados + limiteChars;
+  const pValor = document.getElementById('counter');
+  pValor.innerHTML = -inputLength + limiteChars;
 });
 
 const formData = document.getElementById('form-data');
 const submitName = document.getElementById('submit-name');
 const submitEmail = document.getElementById('submit-email');
 const submitCasa = document.getElementById('submit-casa');
-const submitFamilia = document.getElementById('submit-familia');
+const submitFam = document.getElementById('submit-familia');
 const submitMaterias = document.getElementById('submit-materias');
-const submitAvaliacao = document.getElementById('submit-avaliacao');
+const submitAva = document.getElementById('submit-avaliacao');
 const submitObservacoes = document.getElementById('submit-observacoes');
 
-const form = document.querySelectorAll("main")[0];
+const form = document.querySelectorAll('main')[0];
 const formDataName = document.getElementById('input-name');
 const formDataLastName = document.getElementById('input-lastname');
 const formDataEmail = document.getElementById('input-email');
@@ -67,16 +61,16 @@ function changeFormData() {
   submitName.innerHTML = `Nome: ${formDataName.value} ${formDataLastName.value}`;
   submitEmail.innerHTML = `Email: ${formDataEmail.value}`;
   submitCasa.innerHTML = `Casa: ${formDataCasa.value}`;
-  submitFamilia.innerHTML = `Família: ${document.querySelector('input[name="family"]:checked').value}`;
-  submitAvaliacao.innerHTML = `Avaliação: ${document.querySelector('input[name="rate"]:checked').value}`;
+  submitFam.innerHTML = `Família: ${document.querySelector('input[name="family"]:checked').value}`;
+  submitAva.innerHTML = `Avaliação: ${document.querySelector('input[name="rate"]:checked').value}`;
   submitObservacoes.innerHTML = `Observações: ${textArea.value}`;
 }
 
 function setMaterias() {
   const formDataMaterias = document.querySelectorAll('input[name="materia"]:checked');
   let resultado = '';
-  for(let i = 0; i < formDataMaterias.length; i += 1) {
-    if(i === 0) {
+  for (let i = 0; i < formDataMaterias.length; i += 1) {
+    if (i === 0) {
       resultado = formDataMaterias[i].value;
     } else {
       resultado += `, ${formDataMaterias[i].value}`;
