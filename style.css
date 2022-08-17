@@ -72,3 +72,7 @@ footer {
   left: 0%;
 
 }
+
+ul {
+  list-style: none;
+}
